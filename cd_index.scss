@@ -1,0 +1,475 @@
+/*メインメニューバー*/
+ul.nav {
+	position: fixed;
+	margin: 0 auto;
+	padding: 0 3%;
+	width: 98%;
+	max-width: 1190px;
+	text-align: center;
+	background-color: rgba(253, 253, 253, 0.5);
+	li{
+		flex: 1 0 auto;
+		min-width: 50px;
+		width: 225px;
+		display: inline-block;
+		list-style-type: none;
+		position: relative;
+	}
+	a {
+		font-family: "ヒラギノ明朝 ProN W3";
+		color: white;
+		line-height: 40px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		display: block;
+	}
+}
+
+ul.nav a:hover {
+	color: #383838;
+	font-weight: bold;
+	border-bottom: 4px solid #77A46A;
+}
+
+/*サブメニューバー*/
+ul.nav li:hover ul {
+	display: block;
+}
+ul.nav ul {
+	margin: 0px;
+	padding: 0px;
+	display: none;
+	position: absolute;
+	li {
+		text-align: center;
+		width: 225px;
+		background-color: rgba(253, 253, 253, 0.5);
+		a {
+			font-family: "ヒラギノ明朝 ProN W3";
+			line-height: 35px;
+			text-align: center;
+			padding-left: 5px;
+			font-weight: normal;
+		}
+	}
+}
+
+ul.nav ul li a:hover {
+	color: #383838;
+	font-weight: bold;
+	border-bottom: 3px solid #0F475D;
+}
+
+
+
+
+/*正方形を2段に分けるためのCSS*/
+.details {
+	display:flex;
+	justify-content: space-around;
+	list-style: none;
+	width: 700px;
+	margin: 1em auto;
+	padding: 0;
+	text-align: center;
+	li {
+		position: relative;
+		.type1 { 
+			:hover img {
+		transform: rotateX(180deg);
+	}
+}
+	}
+}
+
+/*マウスホバー時のエフェクトCSS*/
+.hover {
+  position: relative;
+  width: 300px;
+  height:300px;
+  overflow: hidden;
+	.hover-img {
+		margin: 0;
+		padding: 0;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.hover .hover-link1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+	background-image: url(ne_cover.png);
+	background-size: 100%;
+/*ホバー時の動き方(上からスライド)*/
+  transition: .35s ease-in-out;
+	a{
+		padding: 0px 220px 190px 220px;
+		text-align: center;
+		text-decoration: inherit;
+	}
+}
+
+.hover .hover-link2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+	background-image: url(yo_cover.png);
+	background-size: 100%;
+/*ホバー時の動き方(上からスライド)*/
+  transition: .35s ease-in-out;
+	a{
+		padding: 0px 220px 190px 220px;
+		text-align: center;
+		text-decoration: inherit;
+	}
+}
+
+.hover .hover-link3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+	background-image: url(ku_cover.png);
+	background-size: 100%;
+/*ホバー時の動き方(上からスライド)*/
+  transition: .35s ease-in-out;
+	a{
+		padding: 0px 220px 190px 220px;
+		text-align: center;
+		text-decoration: inherit;
+	}
+}
+
+.hover .hover-link4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+	background-image: url(da_cover.png);
+	background-size: 100%;
+/*ホバー時の動き方(上からスライド)*/
+  transition: .35s ease-in-out;
+	a{
+		padding: 0px 220px 190px 220px;
+		text-align: center;
+		text-decoration: inherit;
+	}
+}
+
+/*ホバーエフェクト*/
+.hover:hover .hover-link1 {
+  top: 0;
+}
+.hover:hover .hover-link2 {
+  top: 0;
+}
+.hover:hover .hover-link3 {
+  top: 0;
+}
+.hover:hover .hover-link4 {
+  top: 0;
+}
+
+
+
+/*ここから本体のCSS*/
+.back {
+	text-align: center;
+	line-height: 130px;
+	font-size: 35px;
+	a{
+		color: #272727;
+		text-decoration: none;
+	}
+}
+
+
+#index{
+	background-image: url(back.png);
+	background-size: 100%;
+}
+
+#title{
+color: rgb(71, 69, 69);
+font-weight: bold;
+font-size: 50px;
+font-family: Impact;
+}
+
+#sub{
+	color: rgb(71, 69, 69);
+	font-family: Impact;
+}
+
+.bg{
+	background-image: url(top_bg.png);
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+
+p{
+	color: rgb(44, 38, 20);
+	font-family: "ヒラギノ明朝 ProN W3";
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 35px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+#p{
+	color: rgb(44, 38, 20);
+	font-family: "ヒラギノ明朝 ProN W3";
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+}
+
+
+ul{
+	text-align: center;
+	a{
+		color: rgb(44, 38, 20);
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+#footer{
+	font-family: "ヒラギノ明朝 ProN W3";
+	color: #ddd9d5;
+	text-align: center;
+}
+
+#footer1{
+	font-family: "ヒラギノ明朝 ProN W3";
+	color: #805F6D;
+	text-align: center;
+}
+
+#left{
+	font-family: "ヒラギノ明朝 ProN W3";
+	color: #383838;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+}
+
+#right{
+	padding-top: 20px;
+	padding-bottom: 30px;
+	font-family: "ヒラギノ明朝 ProN W3";
+	color: #383838;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+}
+
+#in{
+	padding-top: 150px;
+	padding-bottom: 250px;
+	font-family: "ヒラギノ明朝 ProN W3";
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+}
+.bg-cover{
+	background-color: rgba(24, 24, 24, 0.5);
+}
+
+.bg-2{
+	padding-top: 100px;
+	padding-bottom: 150px;
+	background-color: #ddd9d5;
+	h3{
+		padding-bottom: 10px;
+		position: relative;
+		text-align: center;
+		font-size: 40px;
+		color: #383838;
+		:before{
+			position: absolute;
+			bottom: -10px;
+			left: calc(50% - 30px);
+			width: 60px;
+			height: 5px;
+			content: '';
+			border-radius: 3px;
+			background: #0F475D;
+		}
+		}
+}
+
+.bg-3{
+	padding-top: 100px;
+	padding-bottom: 150px;
+	background-color: #0F475D;
+	h3{
+		padding-bottom: 10px;
+		position: relative;
+		text-align: center;
+		font-size: 40px;
+		color: #77A46A;
+		:before{
+			position: absolute;
+			bottom: -10px;
+			left: calc(50% - 30px);
+			width: 60px;
+			height: 5px;
+			content: '';
+			border-radius: 3px;
+			background: #ddd9d5;
+		}
+		}
+	h4{
+		text-align: center;
+		font-size: 15px;
+		color: #77A46A;
+	}
+	p{
+		color: #ddd9d5;
+		font-family: "ヒラギノ明朝 ProN W3";
+	}
+}
+
+.bg-4{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #ddd9d5;
+}
+
+.bg-5{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #383838;
+	a{
+		color: #ddd9d5;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+/*粘着テープ*/
+.tape-top-ne{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-image: url("ne.png");
+	background-size: 100%;
+	h1{
+		padding-bottom: 10px;
+		position: relative;
+		text-align: center;
+		font-size: 40px;
+		color: #0F475D;
+		font-family: "ヒラギノ明朝 ProN W3";
+		}
+}
+
+/*養生テープ*/
+.tape-top-yo{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-image: url("yo.png");
+	background-size: 100%;
+	h1{
+		padding-bottom: 10px;
+		position: relative;
+		text-align: center;
+		font-size: 40px;
+		color: #0F475D;
+		font-family: "ヒラギノ明朝 ProN W3";
+		}
+}
+
+/*クラフトテープ*/
+.tape-top-ku{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-image: url("ku.png");
+	background-size: 100%;
+	h1{
+		padding-bottom: 10px;
+		position: relative;
+		text-align: center;
+		font-size: 40px;
+		color: #0F475D;
+		font-family: "ヒラギノ明朝 ProN W3";
+		}
+}
+
+/*ダクトテープ*/
+.tape-top-da{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-image: url("da.png");
+	background-size: 100%;
+	h1{
+		padding-bottom: 10px;
+		position: relative;
+		text-align: center;
+		font-size: 40px;
+		color: #0F475D;
+		font-family: "ヒラギノ明朝 ProN W3";
+		}
+}
+
+.sub-bg{
+	padding-bottom: 20px;
+	background-color: #ddd9d5;
+}
+
+.tape-sub{
+	h2{
+		padding-top: 40px;
+		padding-bottom: 10px;
+		position: relative;
+		text-align: center;
+		font-size: 30px;
+		color: #383838;
+		:before{
+			position: absolute;
+			bottom: -10px;
+			left: calc(50% - 30px);
+			width: 60px;
+			height: 5px;
+			content: '';
+			border-radius: 3px;
+			background: #0F475D;
+		}
+		}
+}
+
+hr.hr-deco{
+	height: 1px;
+	border-top: 2px dashed #383838;
+}
+
+
+.top{
+	background: #77A46A;
+}
+
+.iframe{
+	text-align: center;
+}
+
+
